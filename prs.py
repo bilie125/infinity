@@ -7,7 +7,7 @@ page = requests.get(URL)
 text = page.content
   
 soup = BeautifulSoup(text, "html.parser")
-with open("D:\Project\parser\output.html", "w", encoding = 'utf-8') as file:
+with open('output.html', "w", encoding = 'utf-8') as file:
     
     # prettify the soup object and convert it into a string
     file.write(str(soup.table.prettify()))
